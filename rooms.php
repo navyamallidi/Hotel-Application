@@ -104,10 +104,14 @@
             margin-bottom: 10px;
         }
         .room{
-            margin-left: 200px;
-            border: 2px dotted gray;
+            margin-left: 150px;
+            border: 2px dotted #ccc;
             padding-left:10px;
             padding-right: 10px;
+        }
+        .pricemain{
+            margin-left: 50px;
+            font-size: 20px;
         }
     </style>
     <script>
@@ -176,8 +180,14 @@
             echo '<div style="font-size:20px" margin-bottom:10px>';
             echo 'Room | Guests';
             echo '</div>';
-            echo '<div>';
-            echo '1 room' .$row["price"].'0 kids';
+            echo '<div style="color:orange; font-weight:400; font-size:12px">';
+            echo '1 room ' .$row["capacity"].' Adults 0 kids';
+            echo '</div>';
+            echo '</div>';
+            echo '<div class="pricemain">';
+            echo 'Rs ' .$row["price"];
+            echo '<div style="font-weight:100">';
+            echo 'Excluding Taxes';
             echo '</div>';
             echo '</div>';
             echo '</div>';
