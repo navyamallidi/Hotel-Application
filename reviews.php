@@ -31,24 +31,19 @@
         border: 1px solid gainsboro;
         box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.1);
     }
-    .date{
-        margin-left: 40px;
-        font-size: 10px;
-        font-weight: 100;
-    }
     .thick-hr {
         border: 0;
-        height: 2px; /* Thickness of the hr */
-        background: gray; /* Color of the hr */
+        height: 2px; 
+        background: gray; 
     }
     .rev{
         font-size: 15px;
         font-weight: 200;
         margin-top: -5px;
+        margin-left: 20px;
     }
 </style>
 
-</div>
 
 <?php
 $query = "SELECT * FROM reviews";
@@ -65,9 +60,9 @@ if (mysqli_num_rows($result) > 0) {
         echo $row["star"].'/10';
         echo '</div>';
         echo '</div>';
-        echo '<div class="date">';
-        echo $row["date"];
-        echo '</div>';
+        // echo '<div class="date">';
+        // echo $row["date"];
+        // echo '</div>';
         echo '<hr class="thick-hr">';
         echo '<div class="rev">';
         echo $row["review"];

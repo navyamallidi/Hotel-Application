@@ -56,7 +56,7 @@ if (mysqli_num_rows($result) > 0) {
         flex: 1;
         border: 1px solid gainsboro;
         box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.1);
-        white-space: nowrap; /* Prevents line breaks */
+        white-space: nowrap; 
     }
 
     .selected {

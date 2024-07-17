@@ -21,6 +21,6 @@
         </ul>
     </div>
     <div>
-        <a href="" class="fw-lighter fs-5 text-light" style="margin-right:70px; margin-left: -100px">Login</a>
+        <a href="" class="fw-lighter fs-5 text-light" style="margin-right:60px; margin-left: -80px">Login</a>
     </div>
 </nav>

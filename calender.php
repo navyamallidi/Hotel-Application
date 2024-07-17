@@ -5,7 +5,7 @@
             margin-top: 100px;
             margin-bottom:40px;
             height:100px;
-            border: 2px solid gray ;
+            border: 2px solid gray;
             width: 70%;">
     <div class="date-picker" style="display: flex;
                 align-items: center;
