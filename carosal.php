@@ -1,4 +1,5 @@
-<div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel" style="width: 350px; border:2px solid gray; height:fit-content;">
+<div style="margin-top: 20px; height:fit-content; box-shadow: 0px 0px 4px 4px rgba(0, 0, 0, 0.1);">
+<div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel" style="width: 350px; border:2px solid gray;">
   <div class="carousel-inner">
     <div class="carousel-item active">
       <img src="./assets/C1.png" class="d-block w-100" alt="...">
@@ -18,4 +19,5 @@
     <span class="carousel-control-next-icon" aria-hidden="true"></span>
     <span class="visually-hidden">Next</span>
   </button>
+</div>
 </div>
