@@ -1,4 +1,3 @@
-
 <style>
     .first {
         width: 100%;
@@ -12,10 +11,12 @@
         margin-left: 10px;
         margin-top: 10px;
     }
-    .margin{
+
+    .margin {
         margin-right: 130px;
     }
-    .flex{
+
+    .flex {
         display: flex;
         margin-left: 20px;
     }
@@ -68,26 +69,27 @@
     </div>
     <div class="row">
         <div class="first">
-        <h5>Details</h5>
-        <hr>
-        <div class="flex">
-            <div class=" px-5"><span class="icon" ><i class="fa fa-clock-o"></i></span>Check In: 12:00</div>
-            <div class=" px-5"><span class="icon"><i class="fa fa-clock-o"></i></span>Check Out: 11:00</div>
-            <div class=" px-5"><span class="icon"><i class="fa fa-plane"></i></span>Thiruvananthapuram International Airport (6 KM)</div>
+            <h5>Details</h5>
+            <hr>
+            <div class="flex">
+                <div class=" px-5"><span class="icon"><i class="fa fa-clock-o"></i></span>Check In: 12:00</div>
+                <div class=" px-5"><span class="icon"><i class="fa fa-clock-o"></i></span>Check Out: 11:00</div>
+                <div class=" px-5"><span class="icon"><i class="fa fa-plane"></i></span>Thiruvananthapuram International Airport (6 KM)</div>
+            </div>
+            <div class="flex">
+                <div class="px-1">
+                    <span class="icon px-5"><i class="fa fa-train"></i></span>Kanyakumari Railway Station (1.6 KM)
+                </div>
+                <div class="px-1">
+                    <span class="icon px-5"><i class="fa fa-whatsapp"></i></span>8838927479
+                </div>
+                <p class="feedback-links px-5">
+                    <span class="icon"><i class="fa fa-comment"></i></span>Feedback Links:
+                    <i class="fa fa-tripadvisor"></i>
+                    <i class="fa fa-hotel"></i>
+                </p>
+            </div>
         </div>
+
     </div>
-    <div class="flex">
-      <div class="px-5">
-        <span class="icon px-5"><i class="fa fa-train"></i></span>Kanyakumari Railway Station (1.6 KM)
-      </div>
-      <div class="px-5">
-            <span class="icon px-5"><i class="fa fa-whatsapp"></i></span>8838927479
-      </div>
-            <p class="feedback-links px-5">
-                <span class="icon"><i class="fa fa-comment"></i></span>Feedback Links:
-                <i class="fa fa-tripadvisor"></i>
-                <i class="fa fa-hotel"></i>
-            </p>
-      </div>
-        </div>
 </div>

@@ -13,6 +13,9 @@
             border-right: 1px solid gray;
             border-bottom: none;
         }
+        .nav-item{
+            padding-left: 100px;
+        }
 
         .tab-content {
             border: 1px solid #ddd;
@@ -91,7 +94,7 @@
                 <div class="text-center font-weight-100">No services available at this time</div>
             </div>
             <div class="tab-pane fade" id="reviews" role="tabpanel" aria-labelledby="reviews-tab">
-                <!-- Reviews content goes here -->
+                <?php include 'reviews.php'?>
             </div>
         </div>
     </div>
