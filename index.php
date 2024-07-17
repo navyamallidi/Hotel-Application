@@ -14,6 +14,7 @@
 <body>
 <?php include 'header.php';?>
 <?php include 'calender.php';?>
+<?php include 'datesrender.php'?>
 <div style="display: flex;">
 <?php include 'rooms.php';?>
 <?php include 'carosal.php';?>

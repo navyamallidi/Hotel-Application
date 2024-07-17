@@ -1,20 +1,19 @@
-<div class="container" 
-     style="display: flex;
+<div>
+<div class="container" style="display: flex;
             flex-direction: column;
             align-items: center;
             margin-top: 100px;
+            margin-bottom:40px;
+            height:100px;
             border: 2px solid gray ;
-            width: 70%;
-            height: 100px;">
-    <div class="date-picker" 
-         style="display: flex;
+            width: 70%;">
+    <div class="date-picker" style="display: flex;
                 align-items: center;
                 gap: 10px;">
         <div style="display: flex; 
                     flex-direction:column">
             <label for="checkin" style="font-weight: bold;">Check In</label>
-            <input type="text" id="checkin" readonly 
-                   style="padding: 10px;
+            <input type="text" id="checkin" readonly style="padding: 10px;
                           border: 1px solid #ccc;
                           border-radius: 5px;
                           cursor: pointer;">
@@ -23,31 +22,30 @@
 
         <div style="display: flex; flex-direction:column">
             <label for="checkout" style="font-weight: bold;">Check Out</label>
-            <input type="text" id="checkout" readonly 
-                   style="padding: 10px;
+            <input type="text" id="checkout" readonly style="padding: 10px;
                           border: 1px solid #ccc;
                           border-radius: 5px;
                           cursor: pointer;">
         </div>
 
 
-        <button id="checkAvailability" 
-              style="padding: 10px 20px; 
+        <button id="checkAvailability" style="padding: 10px 20px; 
                      background-color: orange;
                      border: none;
                      border-radius: 5px;
+                     margin-top:25px;
                      color: white;
                      cursor: pointer;">CHECK AVAILABILITY</button>
     </div>
 
-    
-    <div class="calendar" 
-         style="display: none;
+
+    <div class="calendar" style="display: none;
                 margin-top: 20px;
                 border: 1px solid #ccc;
                 border-radius: 5px;
                 padding: 10px;" id="calendar">
     </div>
+</div>
 </div>
 
 

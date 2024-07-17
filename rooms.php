@@ -143,9 +143,10 @@
             margin-left: 50px;
             font-size: 20px;
         }
-        .addbtn{
+
+        .addbtn {
             margin-left: 100px;
-            background-color:orange ;
+            background-color: orange;
             border: 0px solid gray;
             padding-top: 5px;
             padding-bottom: 5px;
@@ -153,7 +154,64 @@
             padding-right: 10px;
             color: #F4EDEC;
             box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.1);
-            
+        }
+
+        .addbtn1 {
+            padding: 10px 20px;
+            background-color: #f39c12;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        .popup1 {
+            display: none;
+            position: fixed;
+            z-index: 1;
+            left: 30%;
+            top: 30%;
+            width: 40%;
+            height: 100%;
+            overflow: auto;
+        }
+
+        .popup-content1 {
+            background-color: #fefefe;
+            margin: 15% auto;
+            padding: 20px;
+            border: 1px solid #888;
+            width: 80%;
+        }
+
+        .close1 {
+            color: #aaa;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+        .close1:hover,
+        .close1:focus {
+            color: black;
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+        .cancel1,
+        .confirm1 {
+            padding: 10px 20px;
+            margin: 10px 5px;
+            border: none;
+            cursor: pointer;
+        }
+
+        .cancel1 {
+            background-color: #ccc;
+        }
+
+        .confirm1 {
+            background-color: #f39c12;
+            color: white;
         }
     </style>
     <script>
@@ -168,6 +226,14 @@
 
         function closePopup() {
             document.getElementById("popup").style.display = "none";
+        }
+
+        function addRoom() {
+            document.getElementById("roomPopup1").style.display = "block";
+        }
+
+        function closePopup() {
+            document.getElementById("roomPopup1").style.display = "none";
         }
     </script>
 </head>
@@ -235,8 +301,8 @@
                 echo 'Excluding Taxes';
                 echo '</div>';
                 echo '</div>';
-                echo '<div >';
-                echo '<button class="addbtn">ADD ROOM</button>';
+                echo '<div>';
+                echo '<button class="addbtn" onclick=addRoom()>ADD ROOM</button>';
                 echo '</div>';
                 echo '</div>';
                 echo '</div>';
@@ -257,6 +323,50 @@
             <p id="popup-price"></p>
         </div>
     </div>
+
+    <div id="roomPopup1" class="popup1">
+        <div class="popup-content1">
+            <span class="close1" onclick="closePopup()">&times;</span>
+            <label for="noOfRooms1">No. Of Room</label>
+            <select id="noOfRooms1">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+            </select>
+            <div>
+                <label>Room1</label>
+                <label for="adults1">Adults</label>
+                <select id="adults1">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                </select>
+                <label for="children5to121">5-12 yrs</label>
+                <select id="children5to121">
+                    <option value="0">0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                </select>
+                <label for="children0to51">0-5 yrs</label>
+                <select id="children0to51">
+                    <option value="0">0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                </select>
+            </div>
+            <button class="cancel1" onclick="closePopup()">CANCEL</button>
+            <button class="confirm1">CONFIRM</button>
+        </div>
+    </div>
+
+
+
 </body>
 
 </html>
